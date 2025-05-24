@@ -12,8 +12,8 @@ The script offers both command-line arguments for direct specification and inter
 * **Targeted Folder Cloning**: Specify a single top-level folder to clone.
 * **Interactive Folder Selection**: If no folder is specified, the script lists available top-level directories from the remote repository for you to choose.
 * **Root Item Inclusion**: Interactively decide whether to include all root-level files and other top-level directories along with your selected folder.
-    * If root items are included, uses Git's **cone mode** for the selected folder and the repository root.
-    * If root items are *not* included, uses Git's **non-cone mode** to strictly limit the checkout to the selected folder and its contents.
+  * If root items are included, uses Git's **cone mode** for the selected folder and the repository root.
+  * If root items are *not* included, uses Git's **non-cone mode** to strictly limit the checkout to the selected folder and its contents.
 * **Automatic Default Branch Detection**: Identifies the default branch of the remote repository.
 * **Error Handling and Cleanup**: Provides informative error messages and cleans up partial clones on failure.
 
@@ -26,35 +26,34 @@ The script offers both command-line arguments for direct specification and inter
 ## Installation
 
 1.  **Download the script**:
-    Save the script content as `git-sparse-clone.sh` (or any other name you prefer) on your system.
+  Save the script content as `git-sparse-clone.sh` (or any other name you prefer) on your system.
 
-    ```bash
-    # Example:
-    # wget [https://raw.githubusercontent.com/gabebohlmann/git-sparse-clone/main/git-sparse-clone.sh](https://raw.githubusercontent.com/gabebohlmann/git-sparse-clone/main/git-sparse-clone.sh)
-    # chmod +x git-sparse-clone.sh
-    ```
-    (Replace the URL with the actual raw file URL once you publish it.)
+  ```bash
+    wget https://raw.githubusercontent.com/gabebohlmann/git-sparse-clone/main/git-sparse-clone.sh
+     chmod +x git-sparse-clone.sh
+  ```
+  (Replace the URL with the actual raw file URL once you publish it.)
 
 2.  **Make it executable**:
-    ```bash
-    chmod +x git-sparse-clone.sh
-    ```
+  ```bash
+  chmod +x git-sparse-clone.sh
+  ```
 
 3.  **Place it in your PATH (Optional)**:
-    For easier access, you can move the script to a directory listed in your system's `PATH` environment variable (e.g., `/usr/local/bin` or `~/bin`).
-    ```bash
-    # Example:
-    1. Rename file without .sh extension
-    1. In terminal `mkdir -p ~/bin`
-    1. In terminal at directory with file `mv git-sparse-clone ~/bin/`
-    2. Ensure ~/bin is in your PATH (add to .bashrc, .zshrc, etc. if not)
-        * Copy `export PATH="$HOME/bin:$PATH"` 
-        * In termanal nano ~/.bashrc
-        * Page to bottom
-        * `ctrl+shift+c` to paste
-        * `ctrl + O` and `enter` to save and exit
-    ```
-    If you do this, you can run the script as `git-sparse-clone <repo-url>` instead of `./git-sparse-clone.sh <repo-url`.
+  For easier access, you can move the script to a directory listed in your system's `PATH` environment variable (e.g., `/usr/local/bin` or `~/bin`).
+  ```bash
+  # Example:
+  1. Rename file without .sh extension
+  1. In terminal `mkdir -p ~/bin`
+  1. In terminal at directory with file `mv git-sparse-clone ~/bin/`
+  2. Ensure ~/bin is in your PATH (add to .bashrc, .zshrc, etc. if not)
+    * Copy `export PATH="$HOME/bin:$PATH"` 
+    * In termanal nano ~/.bashrc
+    * Page to bottom
+    * `ctrl+shift+c` to paste
+    * `ctrl + O` and `enter` to save and exit
+  ```
+  If you do this, you can run the script as `git-sparse-clone <repo-url>` instead of `./git-sparse-clone.sh <repo-url`.
 
 ## Usage
 
