@@ -44,12 +44,18 @@ The script offers both command-line arguments for direct specification and inter
     For easier access, you can move the script to a directory listed in your system's `PATH` environment variable (e.g., `/usr/local/bin` or `~/bin`).
     ```bash
     # Example:
-    # mkdir -p ~/bin
-    # mv git-sparse-clone.sh ~/bin/
-    # # Ensure ~/bin is in your PATH (add to .bashrc, .zshrc, etc. if not)
-    # # export PATH="$HOME/bin:$PATH"
+    1. Rename file without .sh extension
+    1. In terminal `mkdir -p ~/bin`
+    1. In terminal at directory with file `mv git-sparse-clone ~/bin/`
+    2. Ensure ~/bin is in your PATH (add to .bashrc, .zshrc, etc. if not)
+        * Copy `export PATH="$HOME/bin:$PATH"` 
+        * In termanal nano ~/.bashrc
+        * Page to bottom
+        * `ctrl+shift+c` to paste
+        * `ctrl + O` and `enter` to save and exit
+    # # 
     ```
-    If you do this, you can run the script as `git-sparse-clone.sh` instead of `./git-sparse-clone.sh`.
+    If you do this, you can run the script as `git-sparse-clone <repo-url>` instead of `./git-sparse-clone.sh <repo-url`.
 
 ## Usage
 
