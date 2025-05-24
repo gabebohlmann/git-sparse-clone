@@ -53,7 +53,6 @@ The script offers both command-line arguments for direct specification and inter
         * Page to bottom
         * `ctrl+shift+c` to paste
         * `ctrl + O` and `enter` to save and exit
-    # # 
     ```
     If you do this, you can run the script as `git-sparse-clone <repo-url>` instead of `./git-sparse-clone.sh <repo-url`.
 
