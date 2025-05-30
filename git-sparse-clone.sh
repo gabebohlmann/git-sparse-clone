@@ -8,7 +8,7 @@
 # --- User Configuration ---
 # Set your preferred keyboard layout to change the ergonomic key selectors.
 # Supported layouts: "qwerty", "colemak", "colemak-dh", "colemak-dh-iso", "dvorak"
-KEYBOARD_LAYOUT="colemak"
+KEYBOARD_LAYOUT="qwerty"
 
 # --- Globals ---
 ORIGINAL_PWD=$(pwd)
